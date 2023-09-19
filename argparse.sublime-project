@@ -2,7 +2,7 @@
   "build_systems": [
     {
       "name": "ArgParse Build All",
-      "shell_cmd": "ninja && tests\\argparse_unittests",
+      "shell_cmd": "ninja && ./tests/argparse_unittests",
       "working_dir": "${project_path}/build",
       "file_regex": "(.*):(\\d+):(\\d+)(.*)",
       "shell": true,

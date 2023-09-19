@@ -1,7 +1,7 @@
 # This project uses CMake and Git sub-modules. This Makefile is just in place
 # to make common tasks easier.
 
-.PHONY: build/tests/argparse_unittests
+.PHONY: build/tests/argparse_unittests license
 
 run: build/tests/argparse_unittests
 	./build/tests/argparse_unittests
@@ -21,3 +21,6 @@ clean:
 
 sync:
 	git submodule update --init --recursive -j 8
+
+license:
+	addlicense -l apache -c "Chinmay Garde" argparse tests CMakeLists.txt

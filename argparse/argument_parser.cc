@@ -20,4 +20,24 @@ ArgumentParser::ArgumentParser() = default;
 
 ArgumentParser::~ArgumentParser() = default;
 
+ArgumentParser& ArgumentParser::SetProgramName(std::string name) {
+  program_name_ = std::move(name);
+  return *this;
+}
+
+ArgumentParser& ArgumentParser::SetProgramDescription(std::string desc) {
+  program_description_ = std::move(desc);
+  return *this;
+}
+
+ArgumentParser& ArgumentParser::SetEpilog(std::string epilog) {
+  program_epilog_ = std::move(epilog);
+  return *this;
+}
+
+ArgumentParser& ArgumentParser::SetProgramVersion(std::string version) {
+  program_version_ = std::move(version);
+  return *this;
+}
+
 }  // namespace argparse

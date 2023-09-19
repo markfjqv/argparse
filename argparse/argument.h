@@ -19,7 +19,7 @@
 #include <optional>
 #include <string>
 
-namespace impeller {
+namespace argparse {
 
 class Argument {
  public:
@@ -35,4 +35,4 @@ class Argument {
   Argument& operator=(const Argument&) = delete;
 };
 
-}  // namespace impeller
+}  // namespace argparse

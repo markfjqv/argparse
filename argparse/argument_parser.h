@@ -26,25 +26,13 @@ class ArgumentParser {
 
   ~ArgumentParser();
 
-  ArgumentParser& SetProgramName(std::string name) {
-    program_name_ = std::move(name);
-    return *this;
-  }
+  ArgumentParser& SetProgramName(std::string name);
 
-  ArgumentParser& SetProgramDescription(std::string desc) {
-    program_description_ = std::move(desc);
-    return *this;
-  }
+  ArgumentParser& SetProgramDescription(std::string desc);
 
-  ArgumentParser& SetEpilog(std::string epilog) {
-    program_epilog_ = std::move(epilog);
-    return *this;
-  }
+  ArgumentParser& SetEpilog(std::string epilog);
 
-  ArgumentParser& SetProgramVersion(std::string version) {
-    program_version_ = std::move(version);
-    return *this;
-  }
+  ArgumentParser& SetProgramVersion(std::string version);
 
  private:
   std::string program_name_;
